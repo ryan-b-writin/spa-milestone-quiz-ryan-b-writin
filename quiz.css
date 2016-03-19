@@ -4,7 +4,8 @@
 
 .card {
   border: 2px solid black;
-  text-align: center;
+  text-align: left;
   width: 90%;
   margin: 10%;
+  padding: 1%;
 }
