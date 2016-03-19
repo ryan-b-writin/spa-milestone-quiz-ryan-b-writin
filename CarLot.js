@@ -6,7 +6,7 @@ var CarLot = (function () {
 
   return {
     getInventory: function () {
-
+      return inventory;
     },
 
     //get JSON & parse into an array of objects

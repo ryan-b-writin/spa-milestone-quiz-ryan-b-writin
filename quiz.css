@@ -13,4 +13,5 @@
 
 .selected {
   background-color: yellow;
+  border-width: 5px;
 }

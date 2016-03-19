@@ -9,15 +9,18 @@ var CarLot = (function(carlot) {
     cards[i].addEventListener("click", function(){
       textInput.focus();
 
-      thisDesc = this.getElementsByClassName("desc");
+      let thisDesc = this.getElementsByClassName("desc");
+      let selectedColor = CarLot.getInventory()[i].color.toLowerCase();
 
       //remove selected from all cards
       for (var j=0;j<cards.length;j++) {
         cards[j].classList.remove("selected");
+        cards[j].style.border = "2px solid " + CarLot.getInventory()[j].color.toLowerCase();
       };
 
       //add selected to clicked card
       this.classList.add("selected");
+      this.style.border = "8px solid "+ selectedColor;
     });
   }
  }
