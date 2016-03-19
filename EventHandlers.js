@@ -4,12 +4,12 @@ let thisDesc = [];
 
 var CarLot = (function(carlot) {
  let cards = document.getElementsByClassName("card")
- carlot.cardClick = function(){
+ carlot.activateEvents = function(){
   for (let i=0; i<cards.length;i++){
     cards[i].addEventListener("click", function(){
       textInput.focus();
 
-      let thisDesc = this.getElementsByClassName("desc");
+      thisDesc = this.getElementsByClassName("desc");
       let selectedColor = CarLot.getInventory()[i].color.toLowerCase();
 
       //remove selected from all cards
@@ -22,6 +22,15 @@ var CarLot = (function(carlot) {
       this.classList.add("selected");
       this.style.border = "8px solid "+ selectedColor;
     });
+
+  textInput.addEventListener("keyup", function(e){
+  thisDesc[0].innerHTML = textInput.value;
+  console.log("e", e.code);
+  if (e.code === "Enter") {
+    inputField.value = "";
+  }
+})
+
   }
  }
   return carlot;
