@@ -1,12 +1,16 @@
 .center {
   text-align: center;
+   box-sizing: border-box;
 }
 
 .card {
-  border: 2px solid black;
   text-align: left;
   width: 90%;
   margin: 10%;
-  padding: 1%;
+  padding: 2%;
   min-height: 300px;
+}
+
+.selected {
+  background-color: yellow;
 }
