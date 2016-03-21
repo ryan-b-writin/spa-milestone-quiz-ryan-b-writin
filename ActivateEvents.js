@@ -1,6 +1,4 @@
 "use strict";
-var textInput = document.getElementById("textInput")
-var thisDesc = [];
 var cards = document.getElementsByClassName("card")
 
 var CarLot = (function(carlot) {

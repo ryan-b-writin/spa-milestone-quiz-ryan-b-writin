@@ -1,10 +1,12 @@
 "use strict";
-var textInput = document.getElementById("textInput")
+var textInput = document.getElementById("textInput");
 var thisDesc = [];
-var cards = document.getElementsByClassName("card")
+var cards = document.getElementsByClassName("card");
+var button = document.getElementById("button");
 
 var CarLot = (function(carlot) {
   carlot.activateEvents = function(){
+
     for (let i=0; i<cards.length;i++){
       cards[i].addEventListener("click", CarLot.cardSelected);
       cards[i].addEventListener("click", function(){
@@ -20,6 +22,10 @@ var CarLot = (function(carlot) {
         if (e.code === "Enter") {
           inputField.value = "";
         }
+
+      button.addEventListener("click", function(){
+        textInput.value = "";
+      });
       })
     }
   }
