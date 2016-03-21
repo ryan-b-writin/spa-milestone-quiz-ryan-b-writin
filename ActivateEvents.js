@@ -1,13 +1,10 @@
-let textInput = document.getElementById("textInput")
-let thisDesc = [];
+"use strict";
+var textInput = document.getElementById("textInput")
+var thisDesc = [];
 var cards = document.getElementsByClassName("card")
 
 var CarLot = (function(carlot) {
   carlot.cardSelected = function(){
-    textInput.focus();
-
-    thisDesc = this.getElementsByClassName("desc");
-    // let selectedColor = CarLot.getInventory()[i].color.toLowerCase();
 
     //remove selected from all cards
     for (var j=0;j<cards.length;j++) {
