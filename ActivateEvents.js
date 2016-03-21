@@ -2,7 +2,7 @@
 var cards = document.getElementsByClassName("card")
 
 var CarLot = (function(carlot) {
-  carlot.cardSelected = function(){
+  carlot.cardSelected = function(DOMelement,color){
 
     //remove selected from all cards
     for (var j=0;j<cards.length;j++) {
@@ -11,8 +11,8 @@ var CarLot = (function(carlot) {
     };
 
     //add selected to clicked card
-    this.classList.add("selected");
-    this.style.border = "8px solid black"//+ selectedColor;
+    DOMelement.classList.add("selected");
+    DOMelement.style.border = "8px solid "+color;
   }
   return carlot;
 })(CarLot || {});
