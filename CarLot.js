@@ -41,7 +41,7 @@ var CarLot = (function () {
         carString += `<p>Make: ${current.make}<p>`;
         carString += `<p>Model: ${current.model}<p>`;
         carString += `<p>Year: ${current.year}<p>`;
-        carString += `<p>Price: ${current.price}<p>`;
+        carString += `<p>Price: $ ${current.price}<p>`;
         carString += `<p>Color: ${current.color}<p>`;
         carString += available;
         carString += `<p class='desc'>About this vehicle: ${current.description}<p>`;

@@ -12,7 +12,6 @@ var CarLot = (function(carlot) {
       CarLot.cardSelected(event.currentTarget,CarLot.getInventory()[i].color.toLowerCase());
       });
       cards[i].addEventListener("click", function(event){
-        console.log("event", event.currentTarget);
         //move focus to text input
         textInput.focus();
 
