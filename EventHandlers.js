@@ -15,6 +15,9 @@ var CarLot = (function(carlot) {
         //move focus to text input
         textInput.focus();
 
+        //clear text input
+        textInput.value = "";
+
         //get reference to description for editing
         thisDesc = this.getElementsByClassName("desc");
       })
