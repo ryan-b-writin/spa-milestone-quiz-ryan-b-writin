@@ -36,7 +36,7 @@ var CarLot = (function () {
         }
         // build output string
         let carString = ""
-        carString += "<div class='col-xs-4 center'>";
+        carString += "<div class='col-md-4 center'>";
         carString += "<div class='card' id='card"+i+"'>";
         carString += `<p>Make: ${current.make}<p>`;
         carString += `<p>Model: ${current.model}<p>`;
