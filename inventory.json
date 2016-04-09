@@ -1,0 +1,31 @@
+{
+  "cars": [
+    {
+      "make": "Honda",
+      "model": "Fit",
+      "year": "2007",
+      "price": "7899",
+      "color": "Silver",
+      "purchased": false,
+      "description": "This is a reliable car with minor superficial damage. A great deal!"
+    },
+    {
+      "make": "Toyota",
+      "model": "Yaris",
+      "year": "2012",
+      "price": "9699",
+      "color": "Black",
+      "purchased": false,
+      "description": "Like new!"
+    },
+    {
+      "make": "Jeep",
+      "model": "Cherokee",
+      "year": "2010",
+      "price": "8599",
+      "color": "Firebrick",
+      "purchased": false,
+      "description": "Such a nice jeep! You should buy it."
+    }
+  ]
+}

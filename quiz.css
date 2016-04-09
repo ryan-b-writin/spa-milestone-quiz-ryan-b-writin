@@ -1,0 +1,15 @@
+.center {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.card {
+  text-align: left;
+  padding: 2%;
+  min-height: 300px;
+}
+
+.selected {
+  background-color: yellow;
+  border-width: 5px;
+}
