@@ -1,3 +1,5 @@
+View this page at: http://www.midnightthunder.net/exercises/spa-milestone-quiz-ryan-b-writin/index.html
+
 # Single Page Applications Quiz
 
 ## Setup
